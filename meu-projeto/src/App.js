@@ -1,21 +1,29 @@
-import './App.css';
+import React from "react"
 
-import Evento from './components/Evento';
-import Form from './components/Form';
+import {BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Home from './pages/Home'
+import Empresa from './pages/Empresa';
+import Contato from './pages/Contato';
+import NavBar from "./components/layout/NavBar";
+import Footer from "./components/layout/Footer";
 
 function App(){
 
-  const nome = "Maria";
-
   return (
-    <div className="App">
-      <h1>Testando Eventos</h1>
-      <Evento numero={1}/>     
-      <Evento numero={2}/>     
+    <Router>
+      
+      <NavBar />
 
-      <Form />
+      <Routes>
+        <Route exact path="/" element={<Home/>}></Route>
+        <Route path="/Empresa" element={<Empresa/>}></Route>
+        <Route path="/Contato" element={<Contato/>}></Route>
+      </Routes>
 
-    </div>    
+      <Footer/>
+
+    </Router>
 
   );
 }
