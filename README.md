@@ -7,10 +7,18 @@
 <p>Para executar o projeto: </p>
 
 <ul>
-    <li>entra na past costs</li>
-    <li><span>para baixar as dependências:</span> npm install</li>
-    <li><span>para executar o front-end:</span> npm start</li>
-    <li><span>para executar o back-end:</span> npm run back-end</li>
+    <li><span>para baixar as dependências:</span></li>
+    ```sh
+    npm install
+    ```
+    <li><span>para executar o front-end:</span></li>
+    ```sh
+    npm start
+    ```
+    <li><span>para executar o back-end:</span></li>
+    ```sh
+    npm run backend
+    ```
 </ul>
 
 ![localhost_3000_project_1](https://user-images.githubusercontent.com/63865025/186730811-9ac68569-1efe-4111-bb86-d18cef981136.png)
